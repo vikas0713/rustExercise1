@@ -15,12 +15,14 @@ fn main() {
         println!("Fibonacci Series , coming soon!");
     } else if option == 3 {
         println!("Printing Lyrics.... coming soon");
+    } else {
+        println!("Wrong option!!!")
     }
-    println!("Conversion of 92 F to celsius is  {:.3}", temperature_conversion());
 }
 
 fn temperature_conversion() -> f32 {
     let mut temp = String::new();
+    println!("Enter valid temperature value:  ");
     io::stdin().read_line(&mut temp).expect("Failed to read!!");
     let temperature: f32 = temp.trim().parse().unwrap();
     let formula: f32 = 5.00 / 9.00;
