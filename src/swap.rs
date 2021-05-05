@@ -1,6 +1,6 @@
 
 
-fn swap_number(x:i32, y:i32) {
+pub fn swap_number(x:i32, y:i32) {
     let mut x = x;
     let mut y = y;
     println!("Current values x: {} , y: {}", x, y);

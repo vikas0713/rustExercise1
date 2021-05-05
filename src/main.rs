@@ -1,5 +1,4 @@
 mod swap;
-use swap::swap_numbers;
 
 // This is a practice program of rust,
 // First exercise (https://doc.rust-lang.org/book/ch03-05-control-flow.html#summary) solution
@@ -20,6 +19,7 @@ fn main() {
         println!("Printing Lyrics.... coming soon");
     } else if option == 4 {
         println!("Swapping 23, 45");
+        swap::swap_number(23, 45);
     }
     else{
         println!("Wrong option!!!")
