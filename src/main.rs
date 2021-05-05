@@ -1,3 +1,6 @@
+mod swap;
+use swap::swap_numbers;
+
 // This is a practice program of rust,
 // First exercise (https://doc.rust-lang.org/book/ch03-05-control-flow.html#summary) solution
 use std::io;
@@ -15,7 +18,10 @@ fn main() {
         println!("Fibonacci Series , coming soon!");
     } else if option == 3 {
         println!("Printing Lyrics.... coming soon");
-    } else {
+    } else if option == 4 {
+        println!("Swapping 23, 45");
+    }
+    else{
         println!("Wrong option!!!")
     }
 }
